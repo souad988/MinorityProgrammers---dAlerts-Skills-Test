@@ -6,7 +6,7 @@ width: 100%;
 height: 1px;
 margin-left: 0px;
 margin-top: 16px;
-margin-bottom: 122px;
+
 background: linear-gradient(89.98deg, #256EFF 0.02%, #F84F60 102.46%);
 
 }
@@ -43,14 +43,19 @@ background: linear-gradient(89.98deg, #256EFF 0.02%, #F84F60 102.46%);
 
 
 }
+.home_container{
+    display: flex;
+    justify-content: center;
+}
 
 .alerts_container{
+    position: absolute;
     margin: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 122px;
-    
+    margin-top: 122px;
 }
 
 .alerts{
@@ -180,4 +185,80 @@ tbody tr:nth-child(odd) {
 .alert_exchange>small{
     font-weight:lighter;
     margin-top:-4px;
+}
+
+/*
+.add_alert_container{
+    position: absolute;
+    background-color:blueviolet;
+    z-index: 1;
+    min-height: 500px;
+    margin: 0;
+    width: 50%;
+    border-radius: ;
+}
+*/
+.add_alert_container{
+    overflow: hidden;
+    position: absolute;
+    width: 708px;
+    height: 573px;
+    left: 286px;
+    top: 73px;
+    outline: none;
+    border: 1px solid ;
+    border-image-width: 1px;
+    border-image: linear-gradient(236.77deg, #256EFF 0%, #F84F60 104.88%);
+    ;
+    
+    background: #1F2231;
+    /*border-radius: 10px;*/
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 74px;
+}
+
+form{
+    overflow: hidden;
+    background-color: inherit;
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    gap: 2em;
+    padding: 35px;
+}
+.add_alert_input_row2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+}
+.add_alert_input_row3{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 7px; 
+}
+
+h5{
+    background-color: inherit;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+select,select>option{
+    color: white;
+}
+
+input,select,form>button{
+    background: #161522;
+    border-radius: 10px;
+    width: 100%;
+    height: 53px;
+    border:none;
+}
+
+form>button{
+    background-color:rgba(20, 152, 104, 1);
 }
