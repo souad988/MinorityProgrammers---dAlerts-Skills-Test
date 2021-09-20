@@ -7,10 +7,12 @@ function AddAlert({coins,exchanges}) {
     const [target_price,setTarget_price]=useState(0);
     const [above_or_below,setAbove_or_below]=useState('below');
     const [notification_type,setNotification_type]=useState('')
-    
+    function handelSubmit(){
+
+    }
     return (
         <div className="add_alert_container">
-             <form>
+             <form onSubmit={handelSubmit()}>
                  <div className="add_alert_input_row1">
                      <h5>TOKEN ADRESS</h5>
                      <input type='text' placeholder='put token address' onChange={(e)=>setToken_address(e.target.value)}></input>
