@@ -28,6 +28,7 @@
     ]
   },
   "browserslist": {
+    
     "production": [
       ">0.2%",
       "not dead",
@@ -38,5 +39,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:3001"
 }

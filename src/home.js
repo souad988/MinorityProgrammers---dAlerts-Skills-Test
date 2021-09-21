@@ -3,22 +3,21 @@ import Alert from './Alert'
 import axios from 'axios'
 import './home.css'
 import AddAlert from './AddAlert'
-import listReactFiles from 'list-react-files'
-import coinListe from './coinListe.js'
+
 
 function Home() {
     const [showAddAlert,setShowAddAlert]=useState(false);
     const [coins,setCoins]=useState();
     const [exchangs,setExchanges]=useState();
     useEffect(()=>{
-        axios.get('https://localhost:3000').then((res)=>{
-        console.log(res.data);
+        axios.get('http://localhost:3001').then((res)=>{
+        console.log(res.data)
     })
     },[]);
 
     useEffect(() => {
         axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false').then((res)=>{
-        console.log(res.data);
+        
         setCoins(res.data);
         }
         )
@@ -29,7 +28,6 @@ function Home() {
     
     useEffect(() => {
         axios.get('https://api.coingecko.com/api/v3/exchanges').then((res)=>{
-        console.log(res);
         setExchanges(res.data);
         }
         )
@@ -70,8 +68,8 @@ function Home() {
                 {[...Array(5)].map((item ,key)=> 
                          
                        (
-                       <Alert evenOdd={key%2?'O':'E'} k={key} id={key} >
-                           {console.log(key)}
+                       <Alert  evenOdd={key%2?'O':'E'} k={key} key={key} >
+                           
                        </Alert>) 
                     )}
                     
