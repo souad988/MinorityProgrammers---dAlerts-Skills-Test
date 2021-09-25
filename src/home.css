@@ -34,14 +34,15 @@ background: linear-gradient(89.98deg, #256EFF 0.02%, #F84F60 102.46%);
 
     color: #256EFF;
 }
-.header_logo>img{
+.header_logo>.login_img>img{
     height: 41.02069091796875px;
     width: 39px;
-    margin-left: 40px;
-    margin-top: 16px;
+    
     border-radius: 0px;
-
-
+}
+.header_logo>.login_img{
+margin-left: 40px;
+    margin-top: 16px;
 }
 .home_container{
     display: flex;

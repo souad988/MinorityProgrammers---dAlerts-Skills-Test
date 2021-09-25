@@ -15,7 +15,7 @@ function AddAlert({coins,exchanges}) {
             mode:'cors',
             headers:{
                     
-                     'ContentType':'application/x-www-form-urlencoded'
+                     'ContentType':'application/json'
                     },
             method: 'post',
             url: `http://localhost:3001`,
@@ -25,9 +25,9 @@ function AddAlert({coins,exchanges}) {
                     'target_price':target_price, 
                     'above_or_below':above_or_below,
                     'notification_type':notification_type
-                  }
+                  },
         }).then((res) => {
-                console.log('then...',res)
+                console.log('then...',res.data)
         }).catch( (error)=> {
             if (error.response) {
                //server responded to the request

@@ -1,0 +1,127 @@
+   
+
+.form__container{
+    margin: 0;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    font-family:Poppins;
+
+}
+.login{
+    margin: 0;
+    width: 50%;
+    align-self: center;
+    border: 2px solid ;
+    border-image-width: 2px;
+    border-image: linear-gradient(236.77deg, #256EFF 0%, #F84F60 104.88%);
+    border-image-slice: 1;
+    
+      
+}
+.login__form,.signup__form{
+
+    margin-top: 0%;
+    
+    
+    border-top: none;
+    background: #1F2231;
+    /*border-radius: 10px;*/
+    box-shadow: 0px 4px 4px 0px rgba(6, 51, 253, 0.25);
+    align-self:center;
+    padding: 2em 3em;
+    
+   /* width: 350px;
+    height:350px;*/
+}
+
+
+.login__form>form,.signup__form>form{
+    overflow: hidden;
+    background-color: inherit;
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    gap: 2em;
+    padding: 35px;
+}
+
+input:hover{
+    transform: scale(1.02);
+    background-color:#fa2339;
+    color: aliceblue;
+}
+
+button:hover{
+    opacity: 80%;
+}
+form>button{
+    background-image: linear-gradient(to right, #256EFF  20%, #F84F60 51%, #256EFF  100%);
+    box-shadow:  6px 6px 3px rgb(20, 20, 14);
+    border-radius: 10px;
+    border:none;  
+    width: 100%;
+    height: 43px;
+    font-weight: 900;
+    font-family:Poppins;
+    cursor: pointer;
+}
+.login_buttons{
+    line-height: 0;
+    margin-bottom: 0%;
+}
+.onglet{
+    text-align: center; 
+    height: 43px;
+    border: none;
+    width: 50%;
+    font-size:23px;
+    font-weight: 900;
+    background-color: #050505 ;
+    color:  #256EFF;
+    font-family:Poppins;
+    cursor: pointer;
+    /*outline: 2px solid #F84F60 ;
+    border: 2px solid ;
+    border-image-width: 2px;
+    border-image: linear-gradient(236.77deg, #256EFF 0%, #F84F60 104.88%);
+    border-image-slice: 1;
+    */ 
+     
+}
+.active{
+    
+  background-color: #1F2231 ;
+    color: #F84F60;
+    
+}
+
+
+strong{
+    background-color: inherit;
+}
+input{
+    border-radius: 10px;
+    width: 100%;
+    height: 33px;
+    border:none;
+
+}
+
+.signup__form>h1{
+   
+    color: #F84F60;
+    background-color: inherit;
+}
+.login__form>h1 {
+    color:   #F84F60;
+    background-color: inherit;
+}
+/*
+.login__form >form>input{
+    border-radius: 4px;
+    width: 300px!important;
+    height: 30px!important;
+
+}
+*/

@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@google-cloud/storage": "^5.14.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
     "firebase": "^9.0.2",
+    "firebase-admin": "^9.11.1",
     "list-react-files": "^0.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -28,7 +30,6 @@
     ]
   },
   "browserslist": {
-    
     "production": [
       ">0.2%",
       "not dead",
