@@ -12,27 +12,35 @@ background: linear-gradient(89.98deg, #256EFF 0.02%, #F84F60 102.46%);
 }
 
 .header_logo{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 10fr 1fr;
     align-items: center;
+    
     
 
 }
-.header_logo>h5{
-    position: absolute;
-    width: 58px;
-    height: 18px;
-    left: 111px;
-    top: 28px;
 
+.header_logo>div>h5,.header_login>h2{  
+    
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 18px;
     /* identical to box height */
-
-
     color: #256EFF;
+}
+
+.header_login{
+    text-decoration: none;
+    font-size: medium;
+} 
+
+.header_login>h2{
+    color:#F84F60 ;
+}
+.AccountCircleIcon{
+    color:#256EFF
 }
 .header_logo>.login_img>img{
     height: 41.02069091796875px;
@@ -44,6 +52,8 @@ background: linear-gradient(89.98deg, #256EFF 0.02%, #F84F60 102.46%);
 margin-left: 40px;
     margin-top: 16px;
 }
+
+
 .home_container{
     display: flex;
     justify-content: center;
