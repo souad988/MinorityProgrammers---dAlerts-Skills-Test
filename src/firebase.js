@@ -19,7 +19,7 @@ const firebaseConfig = {
   
 };
 const app=initializeApp(firebaseConfig);
-//const serviceAccount = require('C:\\Users\\TEMP\\dAlerts\\dalerts\\api\\dalerts-f3f35-firebase-adminsdk-z3lmn-1391994e96.json');
+//const serviceAccount = require('D:\\dalerts-f3f35-firebase-adminsdk-z3lmn-1391994e96.json');
 /*
 admin.initializeApp({
   credential: admin.credential.applicationDefault(serviceAccount)
